@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Museo del Noreste</title>
+        <link rel="shortcut icon" href="/Images/N.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/normalize.css">
+        <link rel="stylesheet" href="/CSS/estilos.css">
+    </head>
+
+    <body>
+        <header class="hero">
+            <nav class = "nav container"> <!--Todo está dentro de un contenedor-->
+                <div  class="nav__logo"> <!--style="text-align:center" style="image-align:center"-->
+                    
+                    <img src="/Images/MuseoLogo.png" class="nav__img" >
+                </div>
+                <!--h2 class = "nav__title">Museo del Noreste</h2-->
+                 <a href="/JS/inicio_sesion.html" class="nav__link"><img src= "/Images/login.svg" class="expo_login" id="login"></a>
+                 
+               
+            </nav>
+        </header>
+        <section class="botones">
+            <ul class = "botones_container container">
+                <li class ="boton_items">
+                    <a href="explora.html" class= "nav_boton">Explora</a>
+                </li>
+                <li class ="boton_items">
+                    <a href="horario.html" class= "nav_boton">Horario</a>
+                </li>
+                <li class ="boton_items">
+                    <a href="precio.html" class= "nav_boton">Tarifas</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <video muted autoplay loop>
+                <source src="/videos/inicio.mp4"> 
+            </video>
+        </section>
+        <section class="expo">
+            <div class="absolute">
+                <br>
+                <h1>Un viaje a través de la historia regional</h1><br><br>
+            </div>
+           
+            <section class="botones2">
+                <ul class = "botones_container container">
+                    <li class="absolute1">
+                        <h2>Exposiciones</h2>
+                    </li>
+                    <li class ="boton_items2">
+                        <a href="entradas.html" class= "nav_boton2">Entrada general</a>
+                    </li>
+                </ul>
+            </section>
+
+            <div class = "expo_container container">
+                <img src= "/Images/FlechaIzq.svg" class="expo_flecha" id="before">
+
+                <section class= "expo_body expo_body--show" data-id="1">
+                    <div class="expo_text">
+                        <h2 class="subtitle">Noreste Contemporáneo</h2><br>
+                        <p class="expo_info" >Hoy es un hecho evidente la integración económica, social y cultural del noreste mexicano y Texas. Pero sus vínculos tienen una historia que va desde los nómadas cazadores-recolectores, habitantes de estos territorios durante milenios, hasta la demarcación de la región en el Virreinato. Al entrar a esta sala se despliega un mapa satelital topográfico del noreste contemporáneo en el que en primera instancia pueden distinguirse los límites naturales de la región.</p>
+                    </div>
+                    <figure class="expo_picture">
+                        <img src="/Images/expo1.jpg" class="expo_img">
+                    </figure>
+                </section>
+
+                <section class= "expo_body" data-id="2">
+                    <div class="expo_text">
+                        <h2 class="subtitle"> Integración Funcional Del Noreste</h2><br>
+                        <p class="expo_info">Después de todos los conflictos militares y políticos previos, parece haberse dado una tregua. Porfirio Díaz desactivó problemas fronterizos con una hábil diplomacia. Iniciaba así la etapa en la que estas diferencias no volverían a situar a los dos países al borde de una guerra. Estas condiciones de relativa paz fueron a su vez propicias para atraer la inversión extranjera al noreste. Los ferrocarriles contribuyeron al desarrollo de la agricultura, la minería y la industria al facilitar la circulación de mercancías.</p>
+                    </div>
+                    <figure class="expo_picture">
+                        <img src="/Images/expo2.jpg" class="expo_img">
+                    </figure>
+                </section>
+
+                <section class= "expo_body" data-id="3">
+                    <div class="expo_text">
+                        <h2 class="subtitle">Conformación De La Frontera</h2><br>
+                        <p class="expo_info"> Durante diez años la República de Texas sostuvo con dificultad su independencia, lo que desembocaría en la provocación de una guerra contra México. Mas el designio expansionista de Estados Unidos maduraría con la anexión de la República de Texas en 1845. En 1848 se firmó el tratado de Guadalupe-Hidalgo, con el que terminó la guerra de intervención norteamericana. México cedió gran parte de su territorio del norte a Estados Unidos y la frontera del noreste quedó sobre el río Bravo. La definición de este límite internacional provocaría conflictos bélicos y sociales en ambas naciones.</p>
+                    </div>
+                    <figure class="expo_picture">
+                        <img src="/Images/expo3.jpg" class="expo_img">
+                    </figure>
+                </section>
+                <section class= "expo_body" data-id="4">
+                    <div class="expo_text">
+                        <h2 class="subtitle">Forja Republicana</h2><br>
+                        <p class="expo_info">Al llegar aquí aparece el espacio geográfico de los primeros esbozos de las entidades del noreste. En un mapa en mosaico del noreste mexicano y Texas se observa la distribución territorial de los estados y las principales ciudades que los conformaban. Cuando se consuma la Independencia, las Provincias Internas de Oriente se reintegraron a una diputación provincial en la que afloró la pugna entre Monterrey y Saltillo, pues ambas ciudades deseaban erigirse en cabecera regional.</p>
+                    </div>
+                    <figure class="expo_picture">
+                        <img src="/Images/expo4.jpg" class="expo_img">
+                    </figure>
+                </section>
+                <section class= "expo_body" data-id="5">
+                    <div class="expo_text">
+                        <h2 class="subtitle">Crisol Colonial</h2><br>
+                        <p class="expo_info">Al finalizar el primer tercio del siglo XVIII la integración territorial del noreste colonial estaba incompleta. Esa región estratégica fue muy vulnerable ante las crecientes rivalidades entre España y otras potencias europeas. Para agravar la situación, la presencia de los indios de las praderas se convirtió en una amenaza. La representación de indios comanche y apache en esta sala nos habla de la abrupta movilización de estos grupos hacia la región.</p>
+                    </div>
+                    <figure class="expo_picture">
+                        <img src="/Images/expo5.jpg" class="expo_img">
+                    </figure>
+                </section>
+                <section class= "expo_body" data-id="6">
+                    <div class="expo_text">
+                        <h2 class="subtitle">Virreinato Formativo</h2><br>
+                        <p class="expo_info">Al finalizar el primer tercio del siglo XVIII la integración territorial del noreste colonial estaba incompleta. Texas había sido objeto de una refundación luego de años de abandono. Sin embargo, el gigantesco territorio de la costa del Seno Mexicano permanecía hasta entonces sin dominar; abarcaba una extensión de litoral situado entre la barra del Pánuco y la Bahía del Espíritu Santo y de ahí hasta los linderos del Nuevo Reino de León.</p>
+                    </div>
+                    <figure class="expo_picture">
+                        <img src="/Images/expo6.jpg" class="expo_img">
+                    </figure>
+                </section>
+                <section class= "expo_body" data-id="7">
+                    <div class="expo_text">
+                        <h2 class="subtitle">El Antiguo Noreste</h2><br>
+                        <p class="expo_info">La arqueología ha podido reconstruir el origen y desarrollo de los habitantes del noreste gracias a los hallazgos encontrados al norte y área meridional de Tamaulipas; en San Isidro y la cueva de La Calzada, en Nuevo León; en la cueva de La Candelaria, la laguna de Mayrán y la sierra de la Paila, en Coahuila; y en la meseta de Edwards y el cañón del río Pecos, en Texas.</p>
+                    </div>
+                    <figure class="expo_picture">
+                        <img src="/Images/expo7.jpg" class="expo_img">
+                    </figure>
+                </section>
+
+                <img src="/Images/FlechaD.svg" class="expo_flecha" id="next">
+                
+            </div>
+            
+        </section>
+
+        <footer class="footer">
+            <section class="footer__container container">
+                <form class="footer__form" action="https://formspree.io/f/xlevgaaw"
+                method="POST">
+                    <h2 class="footer__newsletter">Suscríbete a la newsletter</h2>
+                    <div class="footer__inputs">
+                        <input type="email" placeholder="Email:" class="footer__input" name="email" >
+                        <button type="submit" class="footer__submit">Regístrate</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="footer__copy container">
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/3museos/" class="footer__icons"><img src="/Images/facebook.svg" class="footer__img"></a>
+                    <a href="https://www.instagram.com/3museos/?hl=es" class="footer__icons"><img src="/Images/instagram.svg" class="footer__img"></a>
+                    <a href="https://twitter.com/3museos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footer__icons"><img src="/Images/twitter.svg" class="footer__img"></a>
+                    <a href="https://www.youtube.com/user/3museosNL" class="footer__icons"><img src="/Images/youtube.svg" class="footer__img"></a>
+                </div>
+    
+                <h3 class="footer__copyright">Derechos reservados &copy; Museo del noreste</h3>
+            </section>
+        </footer>
+        <script src="/JS/slider.js"></script>
+    </body>
+
+</html>
+

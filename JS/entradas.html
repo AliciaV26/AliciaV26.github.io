@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explora</title>
+        <link rel="shortcut icon" href="/Images/N.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/normalize.css">
+        <link rel="stylesheet" href="/CSS/estilos.css">
+    </head>
+    <body>
+        <header class="hero">
+            <nav class = "nav container"> <!--Todo está dentro de un contenedor-->
+                <div  class="nav__logo"> 
+                    <img src="/Images/MuseoLogo.png" class="nav__img" >
+                </div>
+                <h1 class="horario_title">Entradas</h1>
+            </nav>
+    </header>
+
+    <!--form para comprar entradas-->
+    <section class="entradas__container container">
+        <form class="entrada__form" action="https://formspree.io/f/xzbwrggq"
+        method="POST">
+            <h2 class="entradas__reserva">Reserve sus entradas</h2>
+            <div class="entrada__inputs">
+                <input type="text" placeholder="Nombre:" class="entrada__input" name="name">
+                <input type="email" placeholder="Email:" class="entrada__input" name="email" >
+                <input type="number" min="1" placeholder="Cantidad boletos:" class="entrada__input" name="value">
+                <input type="date" placeholder="Fecha" class="entrada__input" name="message">
+                <button type="submit" class="entrada__submit">Reservar</button>
+            </div>
+        </form>
+    </section>
+        
+        <footer class="footer">
+            <section class="footer__container container">
+                <form class="footer__form" action="https://formspree.io/f/xlevgaaw"
+                method="POST">
+                    <h2 class="footer__newsletter">Suscríbete a la newsletter</h2>
+                    <div class="footer__inputs">
+                        <input type="email" placeholder="Email:" class="footer__input" >
+                        <button type="submit" class="footer__submit">Regístrate</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="footer__copy container">
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/3museos/" class="footer__icons"><img src="/Images/facebook.svg" class="footer__img"></a>
+                    <a href="https://www.instagram.com/3museos/?hl=es" class="footer__icons"><img src="/Images/instagram.svg" class="footer__img"></a>
+                    <a href="https://twitter.com/3museos?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footer__icons"><img src="/Images/twitter.svg" class="footer__img"></a>
+                    <a href="https://www.youtube.com/user/3museosNL" class="footer__icons"><img src="/Images/youtube.svg" class="footer__img"></a>
+                </div>
+    
+                <h3 class="footer__copyright">Derechos reservados &copy; Museo del noreste</h3>
+            </section>
+        </footer>
+    </body>
+</html>
