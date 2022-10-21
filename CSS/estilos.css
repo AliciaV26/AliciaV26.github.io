@@ -522,4 +522,70 @@ input[type="submit"]:hover{
     text-decoration: underline;
 }
 
+@media (max-width:800px){
+    
+    .expo{
+        --padding-container: 60px 0;
+    }
+
+    .footer{
+        --padding-container: 60px 0;
+    }
+
+    .absolute{
+        font-size: 1rem;
+    }
+
+    .botones2{
+        height:50vh;
+    }
+
+    .absolute1{
+        font-size: 1rem;
+    }
+
+    .nav_boton2{
+        font-size: 1rem;
+    }
+
+    .expo_container{
+        padding-top: 0%;
+        grid-template-columns: 30px 1fr 30px;
+        width: fit-content;
+        overflow:scroll;
+    }
+    
+    .expo_body{
+        padding: top 0%;;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items:center;
+    }
+    
+    .expo_img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .footer__container{
+        flex-wrap: wrap;
+    }
+
+    .footer__form{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer__inputs{
+        flex-wrap: wrap;
+    }
+
+    .footer__input{
+        flex-basis: 100%; 
+        margin: 0;
+        margin-bottom: 16px;
+    }
+}
+
 
