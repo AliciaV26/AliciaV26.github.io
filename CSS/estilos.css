@@ -586,6 +586,29 @@ input[type="submit"]:hover{
         margin: 0;
         margin-bottom: 16px;
     }
+    
+    .entradas__container{
+        flex-wrap: wrap;
+    }
+
+    .entrada__form{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .entrada__inputs{
+        flex-wrap: wrap;
+    }
+
+    .entrada__input{
+        flex-basis: 100%; 
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .explora_body{
+        overflow-x: scroll;
+    }
 }
 
 
