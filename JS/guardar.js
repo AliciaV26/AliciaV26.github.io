@@ -135,7 +135,8 @@ function guardar2(){
 
             if(login == true){
                 alert("Ingresó con éxito");
-                window.location.href = "/JS/index.html"
+                window.location.href = "https://aliciav26.github.io/"
+
             }
         }, 2000);
 
