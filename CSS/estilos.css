@@ -247,6 +247,7 @@ video{
     font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;
 }
 /*Footer*/
 
@@ -297,6 +298,7 @@ video{
     font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -490,7 +492,7 @@ form .password{
     text-decoration: underline;
 }
 
-input[type="submit"]{
+._submit{
     width: 100%;
     height: 50px;
     border: 1px solid;
@@ -500,9 +502,17 @@ input[type="submit"]{
     color:#fff;
     cursor: pointer;
     outline: none;
+    text-align: center;
+    text-decoration: none;
 }
 
-input[type="submit"]:hover{
+._submittext{
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+}
+
+._submit:hover{
     border-color: #f8ba37;
     transition: .5s;
 }
@@ -520,6 +530,22 @@ input[type="submit"]:hover{
 
 .registrarse:hover{
     text-decoration: underline;
+}
+
+@media (max-width:600px){
+
+    .expo{
+        --padding-container: 60px 0;
+    }
+
+    .expo_container{
+        grid-template-columns: 28px 1fr 28px;
+        gap: .9em;
+    }
+
+    .expo_flecha{
+        width: 100%;
+    }
 }
 
 @media (max-width:800px){
