@@ -15,15 +15,18 @@
             <h1>Inicio de sesión</h1>
             <form  method="post">
                 <div class="username">
-                    <input type="text" placeholder="Nombre de usuario" required>
+                    <input type="text" placeholder="Nombre de usuario" required id="nombre">
                 </div>
                 <div class="password">
-                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" placeholder="Contraseña" required id="password">
                 </div>
                 <div class="restablecer">
                     <a href="/JS/PasswordOlvidada.html">¿Olvidó su contraseña?</a>
                 </div>
-                <input type="submit" value="Iniciar" >
+                <div class="_submit"> 
+                    <a href="#" class="_submittext" onclick="guardar2()"><br>Iniciar</a> 
+                </div>
+                
                 <div class="registrarse">
                     <a href="/JS/registrate.html">Regístrate</a>
                 </div>
@@ -31,4 +34,8 @@
         </div>
     </section>
     </body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="/JS/configuracion.js"></script>
+    <script src="/JS/guardar.js"></script>
 </html>
