@@ -94,7 +94,7 @@ function guardar3(){
     .then((docRef) => {
         alert("Se registró con éxito")
         console.log("No error")
-        window.location.href = "/JS/index.html"
+        window.location.href = "https://aliciav26.github.io/"
     })
     .catch((error) => {
         alert("Error. No se pudo registrar el usuario")
