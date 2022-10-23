@@ -64,7 +64,7 @@
                 <section class= "expo_body expo_body--show" data-id="1">
                     <div class="expo_text">
                         <h2 class="subtitle">Noreste Contemporáneo</h2><br>
-                        <p class="expo_info" >Hoy es un hecho evidente la integración económica, social y cultural del noreste mexicano y Texas. Pero sus vínculos tienen una historia que va desde los nómadas cazadores-recolectores, habitantes de estos territorios durante milenios, hasta la demarcación de la región en el Virreinato. Al entrar a esta sala se despliega un mapa satelital topográfico del noreste contemporáneo en el que en primera instancia pueden distinguirse los límites naturales de la región.</p>
+                        <p class="expo_info" >Historia que va desde los nómadas cazadores-recolectores, habitantes de estos territorios durante milenios, hasta la demarcación de la región en el Virreinato. Al entrar a esta sala se despliega un mapa satelital topográfico del noreste contemporáneo en el que en primera instancia pueden distinguirse los límites naturales de la región.</p>
                     </div>
                     <figure class="expo_picture">
                         <img src="/Images/expo1.jpg" class="expo_img">
@@ -135,12 +135,12 @@
 
         <footer class="footer">
             <section class="footer__container container">
-                <form class="footer__form" action="https://formspree.io/f/xlevgaaw"
+                <form class="footer__form" 
                 method="POST">
                     <h2 class="footer__newsletter">Suscríbete a la newsletter</h2>
                     <div class="footer__inputs">
-                        <input type="email" placeholder="Email:" class="footer__input" name="email" >
-                        <button type="submit" class="footer__submit">Regístrate</button>
+                        <input type="email" placeholder="Email:" class="footer__input" name="email" id="email">
+                        <a href="#" onclick="guardar()" class="footer__submit"><br>Regístrate</a>
                     </div>
                 </form>
             </section>
@@ -156,8 +156,12 @@
                 <h3 class="footer__copyright">Derechos reservados &copy; Museo del noreste</h3>
             </section>
         </footer>
+        
         <script src="/JS/slider.js"></script>
     </body>
-
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="/JS/configuracion.js"></script>
+    <script src="/JS/guardar.js"></script>
 </html>
 
