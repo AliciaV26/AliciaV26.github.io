@@ -13,7 +13,7 @@ body{
 
 .container{
     width: 90%;
-    max-width: 1200px;
+    max-width: 3000px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -53,6 +53,14 @@ body{
 .nav__link{
     margin-left: auto;
 }
+
+
+.titulo{
+    text-align: center;
+    padding: 10px 0;
+}
+
+
 
 /*Cuadro de botones de navegación*/
 .botones{
@@ -149,7 +157,6 @@ video{
     /*border-radius: 50%; hacer circular la imagen*/
     object-fit: cover;
     object-position: 50% 30%;
-    border: 2px #000;
 }
 
 
@@ -172,6 +179,7 @@ video{
     width: 90%;
     cursor: pointer;
 }
+
 
 .botones2{
     width: 100%;
@@ -290,7 +298,7 @@ video{
 .footer__submit{
     margin-left: auto;
     display: inline-block;
-    height: 50px;
+    height: 40px;
     padding: 0 20px;
     background-color: #000;
     color:#fff;
@@ -299,6 +307,7 @@ video{
     border-radius: 6px;
     cursor: pointer;
     text-decoration: none;
+    padding-top: 10px;
 }
 
 
@@ -361,6 +370,7 @@ video{
 }
 
 /*Estacionamiento/Entrada/Noticias/videos*/
+
 .titulos{
     background-color: #f8ba37;
     color:#000;
@@ -494,7 +504,7 @@ form .password{
 
 ._submit{
     width: 100%;
-    height: 40px; /*Estaba en 50*/
+    height: 40px;
     border: 1px solid;
     background: #f8ba37;
     border-radius: 25px;
@@ -504,7 +514,7 @@ form .password{
     outline: none;
     text-align: center;
     text-decoration: none;
-    padding-top: 10px; /*Código nuevo*/
+    padding-top: 10px; /*Ajustarlo al boton*/
 }
 
 ._submittext{
@@ -613,7 +623,7 @@ form .password{
         margin: 0;
         margin-bottom: 16px;
     }
-    
+
     .entradas__container{
         flex-wrap: wrap;
     }
@@ -636,6 +646,7 @@ form .password{
     .explora_body{
         overflow-x: scroll;
     }
-}
 
+    
+}
 
