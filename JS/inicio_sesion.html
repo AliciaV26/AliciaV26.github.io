@@ -14,17 +14,14 @@
         <div class="formulario_inicio">
             <h1>Inicio de sesión</h1>
             <form  method="post">
-                <div class="username">
-                    <input type="text" placeholder="Nombre de usuario" required id="nombre">
+                <div class="email">
+                    <input type="email" placeholder="Email" required id="email">
                 </div>
                 <div class="password">
                     <input type="password" placeholder="Contraseña" required id="password">
                 </div>
-                <div class="restablecer">
-                    <a href="/JS/PasswordOlvidada.html">¿Olvidó su contraseña?</a>
-                </div>
                 <div class="_submit"> 
-                    <a href="#" class="_submittext" onclick="guardar2()">Iniciar</a> 
+                    <a href="#" class="_submittext" onclick="inicia()">Iniciar</a> 
                 </div>
                 
                 <div class="registrarse">
@@ -36,6 +33,8 @@
     </body>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="/JS/configuracion.js"></script>
     <script src="/JS/guardar.js"></script>
+    <script src="/JS/auth.js"></script>
 </html>
