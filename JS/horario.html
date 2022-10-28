@@ -15,9 +15,15 @@
                     <div  class="nav__logo"> 
                         <img src="/Images/MuseoLogo.png" class="nav__img" >
                     </div>
-                    <h1 class="horario_title">Horario</h1>
+                    <div class="nav__iconos">
+                        <a href="/JS/inicio_sesion.html" class="nav__link"><img src= "/Images/login.svg" class="expo_login" id="login"></a>
+                        <a href="#" class="nav__link" onclick="logout()"><img src= "/Images/logout.svg" class="expo_login" id="logout"></a>
+                    </div>
                 </nav>
         </header>
+        <section class="titulo">
+            <h1>Horario</h1>
+        </section>
         <section class="horario">
             <div class="horario_body container">
                 <p class="horario_text">Lunes cerrado<br><br>
@@ -33,7 +39,7 @@
                     <h2 class="footer__newsletter">Suscríbete a la newsletter</h2>
                     <div class="footer__inputs">
                         <input type="email" placeholder="Email" class="footer__input" name="email" id="email">
-                        <a href="#" onclick="guardar()" class="footer__submit"><br>Regístrate</a>
+                        <a href="#" onclick="guardar()" class="footer__submit">Regístrate</a>
                     </div>
                 </form>
             </section>
