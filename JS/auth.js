@@ -22,7 +22,7 @@ function sign_up(){
     // Signed in 
     var user = userCredential.user;
     // ...
-    window.location.href = "/JS/index.html"
+    window.location.href = "https://aliciav26.github.io/"
   })
   .catch((error) => {
     var errorCode = error.code;
@@ -44,7 +44,7 @@ function inicia(){
         // Signed in
         var user = userCredential.user;
         // ...
-        window.location.href = "/JS/index.html"
+        window.location.href = "https://aliciav26.github.io/"
       })
       .catch((error) => {
         var errorCode = error.code;
