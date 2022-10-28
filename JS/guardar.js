@@ -24,7 +24,7 @@ function guardar(){
 /*RESERVAR ENTRADAS*/
 function reservar(){
     const nombre= document.getElementById("nombre").value;
-    const email= auth.currentUser;
+    const email= auth.currentUser.email;
     const cantidad_boleto= document.getElementById("cantidad_boleto").value;
     const fecha= document.getElementById("fecha").value;
 
@@ -41,6 +41,10 @@ function reservar(){
         valores_null = true;
     }
 
+     if(email == null){
+        alert("Inicie sesión para continuar");
+        valores_null = true;
+    }
     
     if((nombre == "") || (email == "") || (cantidad_boleto == "") || (fecha == "")){
         alert("Complete los campos");
