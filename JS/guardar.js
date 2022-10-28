@@ -14,6 +14,8 @@ function guardar(){
     })
     .then((docRef) => {
         alert("Fue registrado a la newsletter con éxito")
+        console.log("No error")
+        document.getElementById("formulario_newsletter").reset();
     })
     .catch((error) => {
         alert("Error. No pudo ser registrado a la newsletter")
