@@ -63,6 +63,7 @@ function reservar(){
     .then((docRef) => {
         alert("Se hizo una reserva con éxito")
         console.log("No error")
+        document.getElementById("formulario_entradas").reset();
     })
     .catch((error) => {
         alert("Error. No pudo realizarse una reserva")
