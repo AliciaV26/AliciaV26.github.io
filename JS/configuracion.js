@@ -13,5 +13,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 
-// Initialize Cloud Firestore and get a reference to the service
+// Initialize Cloud Firestore and Auth, get a reference to the service
+const auth = firebase.auth();
 const db = firebase.firestore();
