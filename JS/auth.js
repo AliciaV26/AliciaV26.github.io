@@ -22,7 +22,7 @@ function sign_up(){
     // Signed in 
     var user = userCredential.user;
     // ...
-    window.location.href = "https://aliciav26.github.io/"
+    window.location.href = "/JS/index.html"
   })
   .catch((error) => {
     var errorCode = error.code;
@@ -44,7 +44,7 @@ function inicia(){
         // Signed in
         var user = userCredential.user;
         // ...
-        window.location.href = "https://aliciav26.github.io/"
+        window.location.href = "/JS/index.html"
       })
       .catch((error) => {
         var errorCode = error.code;
@@ -56,7 +56,19 @@ function inicia(){
 function logout(){
   auth.signOut().then(() => {
     // Sign-out successful.
+    alert("Ha cerrado sesión");
+    window.location.href = "/JS/inicio.html"
   }).catch((error) => {
     // An error happened.
+  });
+}
+
+function showUser(){
+  auth.onAuthStateChanged(user =>{
+    if(user) {
+        console.log('user logged in:', user);
+        alert("Ya ha iniciado sesión con: "+user.email);
+        window.location.href = "/JS/reservas.html"
+    }
   });
 }
