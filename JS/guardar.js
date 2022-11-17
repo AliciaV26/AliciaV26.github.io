@@ -14,8 +14,6 @@ function guardar(){
     })
     .then((docRef) => {
         alert("Fue registrado a la newsletter con éxito")
-        console.log("No error")
-        document.getElementById("formulario_newsletter").reset();
     })
     .catch((error) => {
         alert("Error. No pudo ser registrado a la newsletter")
@@ -26,7 +24,7 @@ function guardar(){
 /*RESERVAR ENTRADAS*/
 function reservar(){
     const nombre= document.getElementById("nombre").value;
-    const email= auth.currentUser.email;
+    const email= auth.currentUser;
     const cantidad_boleto= document.getElementById("cantidad_boleto").value;
     const fecha= document.getElementById("fecha").value;
 
@@ -43,9 +41,8 @@ function reservar(){
         valores_null = true;
     }
 
-     if(email == null){
-        alert("Inicie sesión para continuar");
-        valores_null = true;
+    if(email == null){
+        alert("Inicie sesión para reservar");
     }
     
     if((nombre == "") || (email == "") || (cantidad_boleto == "") || (fecha == "")){
@@ -69,7 +66,7 @@ function reservar(){
     .then((docRef) => {
         alert("Se hizo una reserva con éxito")
         console.log("No error")
-        document.getElementById("formulario_entradas").reset();
+        window.location.href = "https://aliciav26.github.io/"
     })
     .catch((error) => {
         alert("Error. No pudo realizarse una reserva")
@@ -78,7 +75,70 @@ function reservar(){
     }//if
 }
 
+function generarTabla(){
+    
+    var numFilas = 0;
+    var contenedorTabla;
+    var activo;
 
+    db.collection("reserva").where("email", "==", auth.currentUser.email)
+    .get()
+    .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            // doc.data() is never undefined for query doc snapshots
+            numFilas ++;
+        });
+        console.log("Cantidad reservas: "+numFilas);
+        contenedorTabla = document.getElementById("contenedorTabla");
+
+        contenedorTabla.innerHTML = "";
+        var tabla ="<table class=tabla>";
+
+        tabla += "<td class=campos>Nombre</td>";
+        tabla += "<td class=campos>Correo</td>";
+        tabla += "<td class=campos>Cantidad de boletos</td>";
+        tabla += "<td class=campos>Fecha de reservación</td>";
+        tabla += "<td class=campos>Estado</td>";
+
+        tabla += "<tr>";
+        db.collection("reserva").where("email", "==", auth.currentUser.email)
+        .get()
+        .then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+
+                activo = false;
+                var hoy             = new Date();
+                var fechaFormulario = new Date(doc.data().fecha);
+            
+                // Comparamos solo las fechas => no las horas!!
+                hoy.setHours(0,0,0,0);  // Lo iniciamos a 00:00 horas
+            
+                if (hoy <= fechaFormulario){
+                    activo = true;
+                }
+                    tabla += "<td>"+doc.data().nombre+"</td>"
+                    tabla += "<td>"+doc.data().email+"</td>"
+                    tabla += "<td>"+doc.data().cantidad_boleto+"</td>"
+                    tabla += "<td>"+doc.data().fecha+"</td>"
+                    if(activo == true){
+                        tabla += "<td>Activo</td>"
+                    }
+                    else{
+                        tabla += "<td>Vencido</td>" 
+                    }
+
+                tabla += "</tr>"
+            });
+            tabla += "</table>"
+            contenedorTabla.innerHTML = tabla;
+        })
+        
+    })
+    .catch((error) => {
+        console.log("Error getting documents: ", error);
+
+    });
+}
 
 
 
