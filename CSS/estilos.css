@@ -9,6 +9,13 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    /*Alinear el footer
+    position: relative;
+    padding-bottom: 360px;
+    min-height: 100vh;*/
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container{
@@ -263,6 +270,11 @@ video{
 
 .footer{
     background-color: #f8ba37;
+    bottom: 0;
+    /*Alinear el footer
+    position: absolute;
+    width: 100%;*/
+    margin-top:auto;
 }
 
 .footer__container{
@@ -285,7 +297,7 @@ video{
 
 .footer__input{
     background-color: #fff;
-    height: 40px;
+    height: 50px;
     display: block;
     padding-left: 10px;
     border-radius: 6px;
@@ -337,12 +349,14 @@ video{
 .horario_body{
     text-align: left;
     height: 100%;
+    min-height: 100vh;
 }
 
 /*Horario text*/
 .horario_text{
     font-size: x-large;
     color:#fff;
+    text-align: center;
 }
 
 /*TARIFAS*/
@@ -557,6 +571,10 @@ form .password{
     .expo_flecha{
         width: 100%;
     }
+
+    .contenedorTabla{
+        overflow-x: scroll;
+    }
 }
 
 @media (max-width:800px){
@@ -647,6 +665,28 @@ form .password{
         overflow-x: scroll;
     }
 
+    .contenedorTabla{
+        overflow-x: scroll;
+    }
     
 }
 
+
+
+.tabla{
+    border-spacing: 50px;
+}
+
+.campos{
+    font-weight: 600;
+}
+
+.boton_tabla{
+    color:#f8ba37;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 30px;
+    background-color: #000;
+    padding: 13px 20px;
+}
