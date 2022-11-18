@@ -407,17 +407,23 @@ video{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    padding: 10px 20px;
+    padding: 10px 0;
     justify-items: center;
 }
+
 
 .titulos2{
     background-color: #f8ba37;
     color:#000;
-    display: inline-block;
-    padding: 0 47.5%;
+    display: block;
     text-align: center;
 }
+
+.video_e{
+    height: 190px;
+    width: 310px;
+}
+ 
 
 .noticia_img{
    width: 310px;
@@ -706,8 +712,18 @@ form .password{
         margin-bottom: 16px;
     }
 
-    .explora_body{
+    .grid{
         overflow-x: scroll;
+        grid-gap: 30px;
+        padding: 10px 12px;
+        max-height: 230px;
+    }
+
+    .grid2{
+        overflow-x: scroll;
+        grid-gap: 30px;
+        padding: 10px 12px;
+        max-height: 30px;
     }
 
     .contenedorTabla{
@@ -715,8 +731,6 @@ form .password{
     }
     
 }
-
-
 
 .tabla{
     border-spacing: 50px;
@@ -735,3 +749,6 @@ form .password{
     background-color: #000;
     padding: 13px 20px;
 }
+
+
+
