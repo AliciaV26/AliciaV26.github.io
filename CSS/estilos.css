@@ -436,6 +436,7 @@ video{
     font-weight: 600;
     font-size: larger;
     text-decoration: none; /*Quita el subrayado del texto*/
+    text-align: center;
 }
 
 /*INICIO SESIÓN*/
