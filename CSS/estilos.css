@@ -405,10 +405,18 @@ video{
 
 .grid{
     display: grid;
-    height: 100px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
     grid-template-rows: 1fr;
+    padding: 10px 20px;
+    justify-items: center;
+}
+
+.titulos2{
+    background-color: #f8ba37;
+    color:#000;
+    display: inline-block;
+    padding: 0 47.5%;
+    text-align: center;
 }
 
 .noticia_img{
