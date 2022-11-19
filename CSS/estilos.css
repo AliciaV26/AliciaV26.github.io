@@ -602,6 +602,7 @@ form .password{
     text-align: center;
     text-decoration: none;
     padding-top: 10px; /*Ajustarlo al boton*/
+    min-width: 200px;
 }
 
 ._entradastext{
