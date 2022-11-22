@@ -66,7 +66,7 @@ function reservar(){
     .then((docRef) => {
         alert("Se hizo una reserva con éxito")
         console.log("No error")
-        window.location.href = "https://aliciav26.github.io/"
+        window.location.replace('/JS/reservas.html');
     })
     .catch((error) => {
         alert("Error. No pudo realizarse una reserva")
