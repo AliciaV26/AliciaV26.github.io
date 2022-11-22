@@ -22,7 +22,11 @@ function sign_up(){
     // Signed in 
     var user = userCredential.user;
     // ...
-    window.location.href = "https://aliciav26.github.io"
+    if (user != null){
+      user.sendEmailVerification();
+      //console.log("Email enviado")
+    }
+    window.location.replace('/JS/index.html');
   })
   .catch((error) => {
     var errorCode = error.code;
@@ -44,7 +48,7 @@ function inicia(){
         // Signed in
         var user = userCredential.user;
         // ...
-        window.location.href = "https://aliciav26.github.io"
+        window.location.replace('/JS/index.html');
       })
       .catch((error) => {
         var errorCode = error.code;
@@ -57,7 +61,7 @@ function logout(){
   auth.signOut().then(() => {
     // Sign-out successful.
     alert("Ha cerrado sesión");
-    window.location.href = "https://aliciav26.github.io"
+    window.location.replace('/JS/index.html');
   }).catch((error) => {
     // An error happened.
   });
@@ -68,7 +72,9 @@ function showUser(){
     if(user) {
         console.log('user logged in:', user);
         alert("Ya ha iniciado sesión con: "+user.email);
-        window.location.href = "https://aliciav26.github.io/JS/reservas.html"
+        window.location.replace('/JS/reservas.html');
+    }else{
+      window.location.replace('/JS/inicio_sesion.html');
     }
   });
 }
