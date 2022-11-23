@@ -409,6 +409,7 @@ video{
     grid-template-rows: 1fr;
     padding: 10px 0;
     justify-items: center;
+    grid-row-gap: 30px;
 }
 
 
@@ -719,6 +720,7 @@ form .password{
         grid-gap: 30px;
         padding: 10px 12px;
         max-height: 230px;
+        grid-template-columns: repeat(6, 1fr);
     }
 
     .grid2{
